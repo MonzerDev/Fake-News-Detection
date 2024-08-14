@@ -9,8 +9,8 @@ Datasets
 	Due to their large size, the datasets are hosted on Google Drive. Please download them from the link below:
 	https://drive.google.com/file/d/1kClWEaFzwgBxRrgJP6-JYkR8Sv9V30nE/view?usp=sharing
 	
-	Once downloaded, place the extracted CSV files (stemmed_dataset1_40k.csv and stemmed_WELFake_70k.csv) in 
-	the Datasets/ directory within the project folder.
+	Once downloaded, place the extracted CSV files (stemmed_dataset1_40k.csv and stemmed_WELFake_70k.csv)
+	in the Datasets/ directory within the project folder.
 
 Project Workflow
 	1. Data Preprocessing
@@ -28,8 +28,8 @@ Project Workflow
 
 	3. Results
 	For detailed results, including accuracy, precision, recall, and F1-score metrics for the various 
-	models used in this project, as well as additional information, please refer to the full paper available via 
-	the Google Drive link below:
+	models used in this project, as well as additional information, please refer to the full paper
+	available via the Google Drive link below:
 	https://drive.google.com/file/d/1uMsjUeO1GI4E-n8p22hN6CHvjil2QTLm/view?usp=sharing
 
 How to Use
@@ -38,13 +38,13 @@ How to Use
 	1. Clone the repository:
 		git clone https://github.com/MonzerDev/Fake-News-Detection.git
 
-	2. Navigate to the project directory:
+	2. Navigate to the project directory:	
 		cd Fake-News-Detection
 
 	3. Install the required Python packages:
 		pip install -r requirements.txt
-	Note: You need to manually create a requirements.txt file if it's not already included. This file should 
-	list all the necessary Python packages.
+	Note: You need to manually create a requirements.txt file if it's not already included.
+	This file should list all the necessary Python packages.
 
 	4. Download the datasets from the link provided above and extract them into the Datasets/ directory.
 
