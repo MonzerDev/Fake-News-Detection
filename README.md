@@ -9,8 +9,8 @@ Datasets
 	Due to their large size, the datasets are hosted on Google Drive. Please download them from the link below:
 	https://drive.google.com/file/d/1kClWEaFzwgBxRrgJP6-JYkR8Sv9V30nE/view?usp=sharing
 	
-	Once downloaded, place the extracted CSV files (stemmed_dataset1_40k.csv and stemmed_WELFake_70k.csv)
-	in the Datasets/ directory within the project folder.
+	Once downloaded, place the extracted CSV files (stemmed_dataset1_40k.csv and
+	stemmed_WELFake_70k.csv) in the Datasets/ directory within the project folder.
 
 Project Workflow
 	1. Data Preprocessing
