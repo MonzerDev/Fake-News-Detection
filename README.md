@@ -60,4 +60,4 @@ Contributions are welcome! If you have any ideas, suggestions, or improvements, 
 
 Contact:
 
-For any inquiries, please contact me at [monzerkoukou@gmail.com].
+For any questions or suggestions, please feel free to contact me at [monzerkoukou@gmail.com].
