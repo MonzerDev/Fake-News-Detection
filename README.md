@@ -2,7 +2,7 @@ Fake News Detection
 
 This project involves developing models to detect fake news articles using various machine learning techniques. The models used include Deep Neural Networks, Support Vector Machines (SVM), and Ensemble methods (Random Forest). The project is implemented using Python and several libraries including scikit-learn, PyTorch, and nltk.
 
-Project Structure:
+Project Structure:   
 
 - `Fake_News_Detection_DNN_SVM_Ensemble.ipynb`: The main Jupyter Notebook containing all the code for data preprocessing, model training, evaluation, and testing.
 - `Datasets`: This directory is supposed to contain the datasets used in this project. The datasets are too large to be stored on GitHub, so they are hosted on Google Drive.
@@ -34,8 +34,6 @@ Project Workflow:
    - For detailed results, including accuracy, precision, recall, and F1-score metrics for the various models used in this project, as well as additional information, please refer to the full paper available via the Google Drive link below:
 
 https://drive.google.com/file/d/1uMsjUeO1GI4E-n8p22hN6CHvjil2QTLm/view?usp=sharing
-
-How to Use:
 
 To run this project, follow these steps:
 
