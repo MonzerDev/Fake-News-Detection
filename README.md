@@ -1,61 +1,96 @@
-Fake News Detection
+# Fake News Detection for Business Stability
 
-This project involves developing models to detect fake news articles using various machine learning techniques. The models used include Deep Neural Networks, Support Vector Machines (SVM), and Ensemble methods (Random Forest). The project is implemented using Python and several libraries including scikit-learn, PyTorch, and nltk.
+This project implements a robust fake news detection system aimed at enhancing business stability by identifying and mitigating the spread of political misinformation. The system uses advanced machine learning models, including Support Vector Machines (SVM) and Random Forest, with optimized preprocessing techniques to ensure high accuracy and reliability.
 
-Project Structure:   
+---
 
-- `Fake_News_Detection_DNN_SVM_Ensemble.ipynb`: The main Jupyter Notebook containing all the code for data preprocessing, model training, evaluation, and testing.
-- `Datasets`: This directory is supposed to contain the datasets used in this project. The datasets are too large to be stored on GitHub, so they are hosted on Google Drive.
+## Project Structure
 
-Datasets:
+- **SVM_RF_CountVec_Dataset1.ipynb**: Implements SVM and Random Forest classifiers using CountVectorizer for Dataset1.
+- **SVM_RF_CountVec_WELFAKE.ipynb**: Implements SVM and Random Forest classifiers using CountVectorizer for the WELFAKE dataset.
+- **SVM_RF_TFIDF_Dataset1.ipynb**: Implements SVM and Random Forest classifiers using TF-IDF for Dataset1.
+- **SVM_RF_TFIDF_WELFAKE.ipynb**: Implements SVM and Random Forest classifiers using TF-IDF for the WELFAKE dataset.
 
-Due to their large size, the datasets are hosted on Google Drive. Please download them from the link below:
+---
 
-https://drive.google.com/file/d/1kClWEaFzwgBxRrgJP6-JYkR8Sv9V30nE/view?usp=sharing
+## How to Run the Project
 
-Once downloaded, place the extracted CSV files (`stemmed_dataset1_40k.csv` and `stemmed_WELFake_70k.csv`) in the `Datasets/` directory within the project folder.
+### 1. Install Dependencies
 
-Project Workflow:
+Ensure Python is installed on your system. Install the required Python packages using:
 
-1. Data Preprocessing
-   - The dataset is preprocessed to remove noise and irrelevant information. The preprocessing steps include:
-     - Removing URLs
-     - Converting text to lowercase
-     - Removing stopwords
-     - Stemming words
 
-2. Model Training
-   - Three different models were trained on the preprocessed data:
-     - Deep Neural Network (DNN): A multi-layer perceptron with dropout regularization.
-     - Support Vector Machine (SVM): A linear SVM model.
-     - Ensemble Method (Random Forest): A random forest ensemble model with bootstrapped sampling.
+```bash
+pip install numpy pandas scikit-learn matplotlib
+```
 
-3. Results
-   - For detailed results, including accuracy, precision, recall, and F1-score metrics for the various models used in this project, as well as additional information, please refer to the full paper available via the Google Drive link below:
+### 2. Download Datasets
 
-https://drive.google.com/file/d/1uMsjUeO1GI4E-n8p22hN6CHvjil2QTLm/view?usp=sharing
+The datasets used in this project are large and are hosted on Google Drive. Download them using the following link:
 
-To run this project, follow these steps:
+[Download Datasets](https://drive.google.com/file/d/127zwpZPnoWBx17vOKPgRC5rUcT1J01KQ/view?usp=sharing)
 
-1. Clone the repository:
-   git clone https://github.com/MonzerDev/Fake-News-Detection.git
+Ensure the datasets are placed in the appropriate directory before running the scripts.
 
-2. Navigate to the project directory:
-   cd Fake-News-Detection
+### 3. Running the Models
 
-3. Install the required Python packages:
-   pip install -r requirements.txt
-   Note: You need to manually create a `requirements.txt` file if it's not already included. This file should list all the necessary Python packages.
+Run the appropriate Jupyter notebooks to train and test the models:
 
-4. Download the datasets from the link provided above and extract them into the `Datasets/` directory.
+- For SVM and Random Forest with CountVectorizer:
+  - Dataset1: `SVM_RF_CountVec_Dataset1.ipynb`
+  - WELFAKE: `SVM_RF_CountVec_WELFAKE.ipynb`
 
-5. Run the Jupyter Notebook to execute the code and reproduce the results:
-   jupyter notebook Fake_News_Detection_DNN_SVM_Ensemble.ipynb
+- For SVM and Random Forest with TF-IDF:
+  - Dataset1: `SVM_RF_TFIDF_Dataset1.ipynb`
+  - WELFAKE: `SVM_RF_TFIDF_WELFAKE.ipynb`
 
-Contributing:
+### 4. Training the Models (Optional)
 
-Contributions are welcome! If you have any ideas, suggestions, or improvements, feel free to open an issue or submit a pull request.
+To retrain the models from scratch, execute the respective notebooks and ensure the datasets are correctly preprocessed.
 
-Contact:
+---
 
-For any questions or suggestions, please feel free to contact me at [monzerkoukou@gmail.com].
+## How It Works
+
+1. **Data Preprocessing:**
+   - Large datasets are preprocessed using techniques such as text normalization, tokenization, and vectorization (CountVectorizer and TF-IDF).
+
+2. **Model Training:**
+   - Machine learning classifiers (SVM and Random Forest) are trained on the preprocessed datasets to learn patterns and detect fake news.
+
+3. **Evaluation:**
+   - The models are evaluated on separate test datasets using metrics such as accuracy, precision, recall, and F1-score.
+
+4. **Results:**
+   - The trained models achieve high performance, with precision, recall, and F1-scores exceeding 98% in most cases.
+
+---
+
+## Requirements
+
+- Python 3.x
+- NumPy
+- Pandas
+- Scikit-learn
+- Matplotlib
+
+---
+
+## Notes
+
+- The project focuses on political misinformation but can be extended to other domains.
+- Ensure datasets are preprocessed and formatted correctly before training or testing the models.
+- Pre-trained models and results can be accessed in the provided notebooks.
+
+---
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
+
+---
+
+## Contact
+
+For any questions or suggestions, feel free to contact me at [monzerkoukou@gmail.com](mailto:monzerkoukou@gmail.com).
+

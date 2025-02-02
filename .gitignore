@@ -1,6 +1,0 @@
-# Ignore dataset files
-Project Datasets/
-
-# Ignore other unnecessary files
-*.log
-*.zip
